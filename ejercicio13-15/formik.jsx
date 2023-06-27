@@ -4,8 +4,7 @@ import { Formik, Field, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { LEVELS } from '../../../models/levels.enum';
 import { Task } from '../../../models/task.class';
-// ------WARNING: No sé si funcione, pues no lo probé, pero tengo fe XD.
-// ------Actualización: ya resolví el error que tenía y ahora sí lo pude pobrar y sí funciona XD
+
 const taskSchema = Yup.object().shape({
   name: Yup.string().required('Se requiere nombre'),
   description: Yup.string().required('Se requiere descripción'),
